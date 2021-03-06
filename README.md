@@ -3,6 +3,9 @@
 
 # Description
 
+AS a coordinator of a team of dog walkers
+I WANT an app that can schedule the date, time, and personal information of a dog that needs to be walked and allocate them to the appropriate team member based on individual employee specialty 
+SO THAT I can efficiently manage my team's week and keep accurate client records
 
 
 # Table of Contents 
