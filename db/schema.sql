@@ -1,8 +1,14 @@
-DROP DATABASE if EXISTS dogs_db;
+-- DROP DATABASE if EXISTS dogs_db;
 
-CREATE DATABASE dogs_db;
+-- CREATE DATABASE dogs_db;
 
-USE dogs_db;
+-- USE dogs_db;
+
+DROP DATABASE if EXISTS hg1sixrm9gn0c7w7;
+
+CREATE DATABASE hg1sixrm9gn0c7w7;
+
+USE hg1sixrm9gn0c7w7;
 
 CREATE TABLE dogs (
     id int NOT NULL AUTO_INCREMENT,
