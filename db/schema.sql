@@ -15,7 +15,7 @@ CREATE TABLE dogs (
     dog_name VARCHAR(50) NOT NULL,
     owner_name VARCHAR(50) NOT NULL,
     address VARCHAR(100) NOT NULL,
-    phone_number INT(10) NOT NULL,
+    phone_number VARCHAR(12) NOT NULL,
     long_walk BOOLEAN NOT NULL,
     walk_time TIME,
     extra_notes TEXT(255),
