@@ -1,5 +1,5 @@
 # Project2
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Wtrickser/Project2)
+
 
 # Description
 
@@ -35,7 +35,7 @@ SO THAT I can efficiently manage my team's week and keep accurate client records
 
 # License
 
-
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Wtrickser/Project2)
 
 # Contributing
 
