@@ -1,0 +1,89 @@
+body {
+    background: radial-gradient(#2f4d7a, #132136);
+    background-size: cover;
+    font-family: 'Truculenta', sans-serif;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.headerImg {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 9vh;
+    color: white;
+    text-align: center;
+    margin-top: -315px;
+    z-index: 3;
+    position: relative;
+}
+
+.container {
+    z-index: 1;
+    background-color: #bababa;
+    position: relative;
+    width: 950px;
+    height: 700px;;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -102px;
+    border-radius: 10px;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.employeesBox {
+    text-align: center;
+    margin-left: 680px;
+    z-index: 4;
+    margin-top: -50px;
+    position: relative;
+    font-family: 'Truculenta', sans-serif;
+    font-size: 20px;
+}
+
+#currentDay {
+    margin-top: 50px;
+    padding-top: 40px;
+    margin-left: 22px;
+    position: relative;
+    z-index: 4;
+    font-size: 24px;
+}
+
+#column {
+    float: left;
+    width: 30%;
+    padding-left: 5px;
+    padding-right: 2px;
+    text-align: center;
+    margin-left: 14px;
+    font-size: 23px;
+    border-style: solid;
+    border-color: #0e3f77;
+    border-width: 3px;
+    height: 300px;
+    background-color: #e4e4e4;
+}
+
+@media screen and (max-width: 600px) {
+    #column {
+      width: 100%;
+    }
+}
+
+
+
