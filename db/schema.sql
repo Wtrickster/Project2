@@ -17,7 +17,15 @@ CREATE TABLE dogs (
     address VARCHAR(100) NOT NULL,
     phone_number VARCHAR(12) NOT NULL,
     long_walk BOOLEAN NOT NULL,
-    walk_time TIME,
+    walking BOOLEAN NOT NULL,
+    walked BOOLEAN NOT NULL,
+    walk_time INT NOT NULL,
     extra_notes TEXT(255),
     PRIMARY KEY (id)
+);
+
+CREATE TABLE employees (
+    id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    employee_name VARCHAR (50) NOT NULL,
+    walking BOOLEAN NOT NULL
 );
