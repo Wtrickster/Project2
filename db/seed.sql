@@ -10,4 +10,4 @@ INSERT INTO  dogs (dog_name, owner_name, address, phone_number, extra_notes, lon
 INSERT INTO employees (employee_name, walking, walk_number) VALUES
     ("Pat Talbot", false, 89),
     ("Sam Incandenza", false, 24),
-    ("Tenya Randalls", false, 45)
+    ("Teyana Randalls", false, 45)
