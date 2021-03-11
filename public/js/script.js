@@ -4,6 +4,12 @@ const mysql = require('mysql');
 
 const app = express();
 
+var todayDisplay = moment().format('ddd[ - ] MMMM Do[,] YYYY');
+console.log(todayDisplay)
+$("#currentDay").text(todayDisplay);
+
+var currentTime = parseInt(moment().format('hh'));
+
 // Set the port of our application
 // process.env.PORT lets the port be set by Heroku
 const PORT = process.env.PORT || 8080;
