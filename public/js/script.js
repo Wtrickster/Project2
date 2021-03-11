@@ -39,20 +39,15 @@ $('input#newDog').on('click', function() {
     };
     var owner_Name = $('input#owner_Name').val();
     if ($.trim(owner_Name) != ' ') {
-        $.post('ajax/name.php', { owner_Name: owner_Name })
+        $.post('ajax/owner_Name.php', { owner_Name: owner_Name })
     };
     var dog_info = $('input#dog_info').val();
     $.post('ajax/dog_info.php', { dog_info: dog_info })
-    switch (expression) {
-        case x:
-            // code block
-            break;
-        case y:
-            // code block
-            break;
-        default:
-            // code block
-    }
+    if ($('#long_walk').attr('checked')) {
+        $.post('ajax/long_walk.php', { long_walk: true })
+    } else {
+        $.post('ajax/long_walk.php', { long_walk: false })
+    };
 });
 // Start our server so that it can begin listening to client requests.
 // Log (server-side) when our server has started
