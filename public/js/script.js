@@ -33,17 +33,29 @@ connection.connect((err) => {
 });
 
 $('input#newDog').on('click', function() {
-        var dog_Name = $('input#dog_Name').val();
-        if ($.trim(dog_name) != ' ') {
-            $.post('ajax/dog_Name.php', { dog_Name: dog_Name })
-        };
-        var owner_Name = $('input#name').val();
-        if ($.trim(owner_Name) != ' ') {
-            $.post('ajax/name.php', { dog_Name: owner_Name })
-        };
-    })
-    // Start our server so that it can begin listening to client requests.
-    // Log (server-side) when our server has started
+    var dog_Name = $('input#dog_Name').val();
+    if ($.trim(dog_name) != ' ') {
+        $.post('ajax/dog_Name.php', { dog_Name: dog_Name })
+    };
+    var owner_Name = $('input#owner_Name').val();
+    if ($.trim(owner_Name) != ' ') {
+        $.post('ajax/name.php', { owner_Name: owner_Name })
+    };
+    var dog_info = $('input#dog_info').val();
+    $.post('ajax/dog_info.php', { dog_info: dog_info })
+    switch (expression) {
+        case x:
+            // code block
+            break;
+        case y:
+            // code block
+            break;
+        default:
+            // code block
+    }
+});
+// Start our server so that it can begin listening to client requests.
+// Log (server-side) when our server has started
 app.listen(PORT, () =>
     console.log(`Server listening on: http://localhost:${PORT}`)
 );
