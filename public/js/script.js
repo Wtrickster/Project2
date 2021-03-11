@@ -37,6 +37,10 @@ $('input#newDog').on('click', function() {
     if ($.trim(dog_name) != ' ') {
         $.post('ajax/dog_Name.php', { dog_Name: dog_Name })
     };
+    var breed = $('input#breed').val();
+    if ($.trim(breed) != ' ') {
+        $.post('ajax/breed.php', { breed: breed })
+    };
     var owner_Name = $('input#owner_Name').val();
     if ($.trim(owner_Name) != ' ') {
         $.post('ajax/owner_Name.php', { owner_Name: owner_Name })
