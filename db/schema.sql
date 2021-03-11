@@ -13,6 +13,7 @@ USE hg1sixrm9gn0c7w7;
 CREATE TABLE dogs (
     id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     dog_name VARCHAR(50) NOT NULL,
+    breed VARCHAR(50) NOT NULL,
     owner_name VARCHAR(50) NOT NULL,
     address VARCHAR(100) NOT NULL,
     phone_number VARCHAR(12) NOT NULL,
