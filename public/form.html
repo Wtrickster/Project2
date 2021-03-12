@@ -1,15 +1,56 @@
-<form style="float:left;">
-    <label for="fname">Dog's Name:</label><br>
-    <input type="text" id="dog_name" name="fname"><br>
-    <label for="fname">Breed:</label><br>
-    <input type="text" id="breed" name="fname"><br>
-    <label for="fname">Owner's Name:</label><br>
-    <input type="text" id="owner_name" name="fname"><br>
-    <label for="fname">Address:</label><br>
-    <input type="text" id="address" name="fname"><br>
-    <label for="fname">Phone #:</label><br>
-    <input type="text" id="phone_number" name="fname"><br>
-    <label for="fname">Extra Notes:</label><br>
-    <input type="text" id="extra_notes" name="fname"><br>
-   
-  </form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./stylesheets/style.css" />
+</head>
+<body>
+  <div class="addForm">
+    <div class="formHead"></div>
+    <form method="post" action="">
+      <li id="li_1" >
+    <label class="description" for="element_1">Dog's Name </label>
+		<div>
+			<input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_2" >
+		<label class="description" for="element_2">Breed </label>
+		<div>
+			<input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_3" >
+		<label class="description" for="element_3">Owner's Name </label>
+		<div>
+			<input id="element_3" name="element_3" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_4" >
+		<label class="description" for="element_4">Address </label>
+		<div>
+			<input id="element_4" name="element_4" class="element text large" type="text" maxlength="255" value=""/> 
+		</div>
+		</li>		<li id="li_5" >
+		<label class="description" for="element_5">Phone Number </label>
+		<div>
+			<input id="element_5" name="element_5" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_6" >
+		<label class="description" for="element_6">Extra Notes: </label>
+		<div>
+			<textarea id="element_6" name="element_6" class="element textarea small"></textarea> 
+		</div>
+		</li>
+			
+					<li class="buttons">
+			    <input type="hidden" name="form_id" value="18945" />
+			    
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+		</li>
+			</ul>
+		</form>	
+  </div>
+  
+</body>
+</html>

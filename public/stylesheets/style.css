@@ -73,6 +73,145 @@ h1 {
 	top:1px;
 }
 
+.formHead {
+    background-color: orangered;
+    height: 35px;
+    width: 490px;
+    
+}
+
+.addForm {
+    background-color: #e4e4e4;
+    height: 470px;
+    width: 490px;
+    border-radius: 4px;
+}
+
+form ul
+{
+	font-size:100%;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+form li
+{
+	display:block;
+	margin:0;
+	padding:4px 5px 2px 9px;
+	position:relative;
+}
+
+form li:after
+{
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+}
+
+* html form li
+{
+	height:1%;
+}
+
+form li div label
+{
+	clear:both;
+	color:#444;
+	display:block;
+	font-size:9px;
+	line-height:9px;
+	margin:0;
+	padding-top:3px;
+}
+
+form li span label
+{
+	clear:both;
+	color:#444;
+	display:block;
+	font-size:9px;
+	line-height:9px;
+	margin:0;
+	padding-top:3px;
+}
+
+label.description
+{
+	border:none;
+	color:#222;
+	display:block;
+	font-size:95%;
+	font-weight:700;
+	line-height:150%;
+	padding:0 0 1px;
+}
+
+span.symbol
+{
+	font-size:115%;
+	line-height:130%;
+}
+
+input.text
+{
+	background:#fff;
+	border-bottom:1px solid #ddd;
+	border-left:1px solid #c3c3c3;
+	border-right:1px solid #c3c3c3;
+	border-top:1px solid #7c7c7c;
+	color:#333;
+	font-size:100%;
+	margin:0;
+	padding:2px 0;
+}
+
+input.file
+{
+	color:#333;
+	font-size:100%;
+	margin:0;
+	padding:2px 0;
+}
+
+textarea.textarea
+{
+	background:#fff;
+	border-bottom:1px solid #ddd;
+	border-left:1px solid #c3c3c3;
+	border-right:1px solid #c3c3c3;
+	border-top:1px solid #7c7c7c;
+	color:#333;
+	font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+	font-size:100%;
+	margin:0;
+	width:99%;
+}
+
+input.small
+{
+	width:25%;
+}
+
+input.medium
+{
+	width:50%;
+}
+
+input.large
+{
+    width:100%;
+}
+
+textarea.small
+{
+	height:5.5em;
+}
+
 .employeesBox {
     text-align: center;
     margin-left: 640px;
