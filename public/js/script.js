@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     $(".addForm").hide();
 
-    function addFormDisplay(e){
+    function addFormDisplay(e) {
         e.preventDefault();
         $(".addForm").show();
     }
@@ -49,6 +49,7 @@ $(document).ready(function() {
     //     console.log(`connected as id ${connection.threadId}`);
     // });
 
+    //add a dog
     $('input#newDog').on('click', function() {
         var dog_Name = $('input#dog_Name').val();
         if ($.trim(dog_name) != ' ') {
@@ -70,6 +71,25 @@ $(document).ready(function() {
             $.post('ajax/long_walk.php', { long_walk: false })
         };
     });
+
+    //needs to be walked
+    $('input#newDog').on('click', function() {
+
+
+    });
+
+    //being walked
+    $('input#newDog').on('click', function() {
+
+
+    });
+
+    //finished being walked
+    $('input#newDog').on('click', function() {
+
+
+    });
+
     // Start our server so that it can begin listening to client requests.
     // Log (server-side) when our server has started
     app.listen(PORT, () =>
