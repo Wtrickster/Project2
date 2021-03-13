@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    var todayDisplay = moment().format('ddd[ - ] MMMM Do[,] YYYY');
+    console.log(todayDisplay)
+    $("#currentDay").text(todayDisplay);
 
     const express = require('express');
     const exphbs = require('express-handlebars');
@@ -15,11 +18,7 @@ $(document).ready(function() {
 
     $(".addButton").click(addFormDisplay)
 
-    var todayDisplay = moment().format('ddd[ - ] MMMM Do[,] YYYY');
-    console.log(todayDisplay)
-    $("#currentDay").text(todayDisplay);
-
-    var currentTime = parseInt(moment().format('hh'));
+    
 
     // Set the port of our application
     // process.env.PORT lets the port be set by Heroku

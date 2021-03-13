@@ -17,6 +17,10 @@ body {
     position: relative;
 }
 
+.hidePage {
+	display: none;
+}
+
 h1 {
     font-family: 'Permanent Marker', cursive;
     font-size: 9vh;
@@ -225,10 +229,25 @@ textarea.small
 #currentDay {
     margin-top: 50px;
     padding-top: 40px;
-    margin-left: 22px;
+    margin-left: 40px;
     position: relative;
     z-index: 4;
     font-size: 24px;
+}
+
+#colHead {
+	float: left;
+	width: 30%;
+	padding-left: 5px;
+	padding-right: 2px;
+	text-align: center;
+	margin-left: 18px;
+	font-size: 23px;
+	color: #0e3f77;
+}
+
+.homePage {
+	margin-top: 20px;
 }
 
 #column {
@@ -246,11 +265,32 @@ textarea.small
     background-color: #e4e4e4;
 }
 
+#innerRow {
+	border-style: solid;
+	border-color: #0e3f77;
+	border-width: 1px;
+	height: 149px;
+	width: 293px;
+	margin-left: -8px;
+}
+
+.dogBox {
+	background-color: #e4e4e4;
+	width: 800px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-color: #0e3f77;
+	border-width: 3px;
+}
+
 @media screen and (max-width: 600px) {
     #column {
       width: 100%;
     }
 }
 
-
-
+.bottomPaws {
+	margin-top: 60px;
+}
