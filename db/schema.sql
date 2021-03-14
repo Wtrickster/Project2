@@ -13,7 +13,7 @@ CREATE TABLE dogs (
     phone_number VARCHAR(12) NOT NULL,
     extra_notes TEXT(255),
     stage INT NOT NULL,
-    assigned_walker INT NOT NULL,
+    assigned_walker INT,
     total_walks INT NOT NULL
 );
 
