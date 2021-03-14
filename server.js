@@ -1,28 +1,27 @@
 require("dotenv").config();
 
-var express = require("express");
-var bodyParser = require("body-parser");
+const express = require("express");
+const bodyParser = require("body-parser");
 
-var PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 
-var app = express();
-var db = require("./models");
+const app = express();
+const db = require("./models");
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 //ENABLE if you plan to use handlebars.
-var exphbs = require("express-handlebars");
-app.engine("handlebars", exphbs({defaultLayout: "main"}));
-app.set("view engine","handlebars");
+const exphbs = require("express-handlebars");
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
 //ENABLE if you plan to use controllers as routes/orm.
 require("./controllers/html-routes.js")(app);
 
-
-db.sequelize.sync({}).then(function(){
-    app.listen(PORT, function(){
-        console.log("Listening on localhost:" + PORT);
-    });
+db.sequelize.sync({}).then(() => {
+  app.listen(PORT, () => {
+    console.log("Listening on localhost:" + PORT);
+  });
 });
