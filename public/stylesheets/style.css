@@ -23,7 +23,7 @@ body {
 
 h1 {
     font-family: 'Permanent Marker', cursive;
-    font-size: 9vh;
+    font-size: 9.3vh;
     color: white;
     text-align: center;
     margin-top: -315px;
@@ -293,4 +293,17 @@ textarea.small
 
 .bottomPaws {
 	margin-top: 60px;
+}
+
+.infoButton {
+	border: none;
+	background-color: inherit;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.changeWalkState {
+	border: none;
+	background-color: #e47822;
+	color: white;
 }
