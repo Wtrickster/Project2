@@ -1,4 +1,4 @@
- <!--Header Content-->
+<!--Header Content-->
     <img src="/images/header.png" alt="stock image of person walking a dog on sidewalk" class="headerImg">
     <h1> Walkies </h1>
     <!--Main Content-->
@@ -6,68 +6,92 @@
         <div class="lead" id="currentDay">
         </div><br>
         <div class="addDogDiv">
-            <a href="#" class="addButton">Add New Dog</a>
+            <a href="#" class="addButton">View Client List</a>
         </div>
         <!-- Employees List-->
         <div class="employeesBox">
-            <p class="employeeList"><b><u>Employees Scheduled</b></u><br>
-                Pat Talbot<br>
-                Sam Incandenza<br>
-                Teyana Randalls<br>
+            <p class="employeeList"><b><u>Employees Scheduled</u></b><br> Pat Talbot<br> Sam Incandenza<br> Teyana Randalls<br>
             </p>
-        </div><br><br><br>
-        <div class="needWalk" id="column">
-            <p class="needWalkList"><b>Dogs to Walk:</b><br>
-            </p>
-        </div>
-        <div class="currentWalk" id="column">
-            <p class="currentWalkList"><b>Dogs Currently Being Walked:</b><br></p>
-        </div>
-        <div class="beenWalked" id="column">
-            <p class="walkedList"><b>Completed Walks:</b></p>
+        </div><br><br>
+        <div class="homePage ">
+            <div class="employeeOneColName" id="colHead">Pat Talbot</div>
+            <div class="employeeTwoColName" id="colHead">Sam Incandenza</div>
+            <div class="employeeThreeColName" id="colHead">Teyana Randalls</div>
+            <div class="employeeOne" id="column">
+                <div class="employeeOneNeedWalk" id="innerRow">
+                dfhd
+                </div>
+                <div class="employeeOneActiveWalk" id="innerRow">
+                sdgsdfg
+                </div>
+                
+            </div>
+            <div class="employeeTwo" id="column">
+                <div class="employeeTwoActiveWalk" id="innerRow">
+                sdfgsfg
+                </div>
+                <div class="employeeTwoActiveWalk" id="innerRow">
+                dfgfdg
+                </div>
+            </div>
+            <div class="employeeThree" id="column">
+                <div class="employeeThreeActiveWalk" id="innerRow">
+                dfghfdh
+                </div>
+                <div class="employeeThreeActiveWalk" id="innerRow">
+                dfhfd
+                </div>
+            </div>
         </div><br>
-    <div class="addForm">
-    <div class="formHead"></div>
-    <form method="post" action="">
-      <li id="li_1" >
-    <label class="description" for="element_1">Dog's Name </label>
-		<div>
-			<input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value=""/> 
-		</div> 
-		</li>		<li id="li_2" >
-		<label class="description" for="element_2">Breed </label>
-		<div>
-			<input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value=""/> 
-		</div> 
-		</li>		<li id="li_3" >
-		<label class="description" for="element_3">Owner's Name </label>
-		<div>
-			<input id="element_3" name="element_3" class="element text medium" type="text" maxlength="255" value=""/> 
-		</div> 
-		</li>		<li id="li_4" >
-		<label class="description" for="element_4">Address </label>
-		<div>
-			<input id="element_4" name="element_4" class="element text large" type="text" maxlength="255" value=""/> 
-		</div>
-		</li>		<li id="li_5" >
-		<label class="description" for="element_5">Phone Number </label>
-		<div>
-			<input id="element_5" name="element_5" class="element text medium" type="text" maxlength="255" value=""/> 
-		</div> 
-		</li>		<li id="li_6" >
-		<label class="description" for="element_6">Extra Notes: </label>
-		<div>
-			<textarea id="element_6" name="element_6" class="element textarea small"></textarea> 
-		</div>
-		</li>
-			
-					<li class="buttons">
-			    <input type="hidden" name="form_id" value="18945" />
-			    
-				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
-		</li>
-			</ul>
-		</form>	
-  </div>
+        <!--Client List-->
+        <div class="dogBox hidePage">
+            SDVSDFD
+        </div>
+        <!--Add Dog Form-->
+        <div class="addForm hidePage">
+            <div class="formHead"></div>
+            <form method="post" action="">
+            <li id="li_1" >
+            <label class="description" for="element_1">Dog's Name </label>
+            <div>
+                <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value=""/> 
+            </div> 
+            </li>		<li id="li_2" >
+            <label class="description" for="element_2">Breed </label>
+            <div>
+                <input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value=""/> 
+            </div> 
+            </li>		<li id="li_3" >
+            <label class="description" for="element_3">Owner's Name </label>
+            <div>
+                <input id="element_3" name="element_3" class="element text medium" type="text" maxlength="255" value=""/> 
+            </div> 
+            </li>		<li id="li_4" >
+            <label class="description" for="element_4">Address </label>
+            <div>
+                <input id="element_4" name="element_4" class="element text large" type="text" maxlength="255" value=""/> 
+            </div>
+            </li>		<li id="li_5" >
+            <label class="description" for="element_5">Phone Number </label>
+            <div>
+                <input id="element_5" name="element_5" class="element text medium" type="text" maxlength="255" value=""/> 
+            </div> 
+            </li>		<li id="li_6" >
+            <label class="description" for="element_6">Extra Notes: </label>
+            <div>
+                <textarea id="element_6" name="element_6" class="element textarea small"></textarea> 
+            </div>
+            </li>
+                
+                        <li class="buttons">
+                    <input type="hidden" name="form_id" value="18945" />
+                    
+                    <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+            </li>
+                </ul>
+            </form>	
+        </div>
+        <!--Footer-->
         <img src="/images/bottompaw.png" alt="line of paw prints" class="bottomPaws">
     </div>
+   
