@@ -5,18 +5,26 @@
     <div class="container">
         <div class="lead" id="currentDay">
         </div><br>
-        <div class="addDogDiv">
-            <a href="#" class="addButton">View Client List</a>
+        <div class="buttonDiv">
+            <a href="#" class="topBtn">View Client List</a>
         </div>
         <!-- Employees List-->
         <div class="employeesBox">
             <p class="employeeList"><b><u>Employees Scheduled</u></b><br> Pat Talbot<br> Sam Incandenza<br> Teyana Randalls<br>
             </p>
         </div><br><br>
+
+        <!-- Front Page !-->
         <div class="homePage ">
             <div class="employeeOneColName" id="colHead">Pat Talbot</div>
             <div class="employeeTwoColName" id="colHead">Sam Incandenza</div>
             <div class="employeeThreeColName" id="colHead">Teyana Randalls</div>
+            <!--Each employee is assigned a number in database
+            Pat Talbot = 1
+            Sam Incandenza = 2
+            Teyana Randalls = 3 !-->
+
+            <!--Employee One !-->
             <div class="employeeOne" id="column">
                 <div class="employeeOneNeedWalk" id="innerRow">
                 <ol class="employeeOneWalkList">
@@ -30,6 +38,7 @@
                 </div>
                 
             </div>
+            <!-- Employee Two !-->
             <div class="employeeTwo" id="column">
                 <div class="employeeTwoNeedWalk" id="innerRow">
                 <ol class="employeeTwoWalkList">
@@ -42,6 +51,7 @@
                 </ol>
                 </div>
             </div>
+            <!-- Employee Three !-->
             <div class="employeeThree" id="column">
                 <div class="employeeThreeNeedWalk" id="innerRow">
                 <ol class="employeeThreeWalkList">
@@ -55,28 +65,34 @@
                 </div>
             </div>
         </div><br>
+
         <!--Client List-->
         <div class="dogBox hidePage">
-            SDVSDFD
+            <div class="addDogButton"><button class="topBtn">Add New Dog to Client List</button></div><br>
+            <ol class="clientList">
+                {{#each dogs}}
+                {{/each}}
+            </ol>
         </div>
+
         <!--Add Dog Form-->
         <div class="addForm hidePage">
             <div class="formHead"></div>
             <form method="post" action="">
             <li id="li_1" >
-            <label class="description" for="element_1">Dog's Name </label>
+            <label class="description" for="dog_Name">Dog's Name </label>
             <div>
-                <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value=""/> 
+                <input id="dog_Name" name="dog_Name" class="element text small" type="text" maxlength="255" value=""/> 
             </div> 
             </li>		<li id="li_2" >
-            <label class="description" for="element_2">Breed </label>
+            <label class="description" for="breed">Breed </label>
             <div>
-                <input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value=""/> 
+                <input id="breed" name="breed" class="element text medium" type="text" maxlength="255" value=""/> 
             </div> 
             </li>		<li id="li_3" >
-            <label class="description" for="element_3">Owner's Name </label>
+            <label class="description" for="owner_Name">Owner's Name </label>
             <div>
-                <input id="element_3" name="element_3" class="element text medium" type="text" maxlength="255" value=""/> 
+                <input id="owner_Name" name="owner_Name" class="element text medium" type="text" maxlength="255" value=""/> 
             </div> 
             </li>		<li id="li_4" >
             <label class="description" for="element_4">Address </label>
@@ -103,6 +119,7 @@
                 </ul>
             </form>	
         </div>
+
         <!--Footer-->
         <img src="/images/bottompaw.png" alt="line of paw prints" class="bottomPaws">
     </div>
