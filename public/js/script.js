@@ -45,7 +45,6 @@ $(document).ready(() => {
   app.engine("handlebars", exphbs({ defaultLayout: "main" }));
   app.set("view engine", "handlebars");
 
-<<<<<<< HEAD
   // const connection = mysql.createConnection({
   //     host: 'localhost',
   //     port: 3306,
@@ -64,7 +63,6 @@ $(document).ready(() => {
   // });
 
   //add a dog
-=======
   // Button functions
 
   function viewClients(e) {
@@ -82,7 +80,6 @@ $(document).ready(() => {
   $(".addDogButton").click(addFormDisplay);
   $(".topBtn").click(viewClients);
 
->>>>>>> c97129ec8234fabc450ef05886f9793840c833b5
   $("input#newDog").on("click", () => {
     const dog_Name = $("input#dog_Name").val();
     if ($.trim(dog_name) !== " ") {
@@ -103,7 +100,6 @@ $(document).ready(() => {
     } else {
       $.post("ajax/long_walk.php", { long_walk: false });
     }
-<<<<<<< HEAD
   });
 
   //set up listener for dog button
@@ -180,7 +176,6 @@ $(document).ready(() => {
     PORT,
     () => console.log(`Server listening on: http://localhost:${PORT}`)
     //eslint-disable-next-line indent
-=======
     const address = $("input#address").val();
     //Script for owner address
     const phone_number = $("input#phone_number").val();
@@ -198,6 +193,5 @@ $(document).ready(() => {
   // Log (server-side) when our server has started
   // eslint-disable-next-line prettier/prettier
   app.listen(PORT, () => console.log(`Server listening on: http://localhost:${PORT}`)
->>>>>>> c97129ec8234fabc450ef05886f9793840c833b5
   );
 });
