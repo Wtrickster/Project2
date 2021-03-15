@@ -17,9 +17,13 @@ body {
     position: relative;
 }
 
+.hidePage {
+	display: none;
+}
+
 h1 {
     font-family: 'Permanent Marker', cursive;
-    font-size: 9vh;
+    font-size: 9.3vh;
     color: white;
     text-align: center;
     margin-top: -315px;
@@ -45,11 +49,11 @@ h1 {
     clear: both;
 }
 
-.addDogDiv {
+.buttonDiv {
     margin-left: 60px;
 }
 
-.addButton {
+.topBtn {
 	box-shadow: 0px 10px 14px -7px #276873;
 	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
 	background-color:#599bb3;
@@ -64,11 +68,11 @@ h1 {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #3d768a;
 }
-.addButton:hover {
+.topBtn:hover {
 	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
 	background-color:#408c99;
 }
-.addButton:active {
+.topBtn:active {
 	position:relative;
 	top:1px;
 }
@@ -78,6 +82,10 @@ h1 {
     height: 35px;
     width: 490px;
     
+}
+
+.addDogDiv {
+	margin-right: 600px;
 }
 
 .addForm {
@@ -225,10 +233,25 @@ textarea.small
 #currentDay {
     margin-top: 50px;
     padding-top: 40px;
-    margin-left: 22px;
+    margin-left: 40px;
     position: relative;
     z-index: 4;
     font-size: 24px;
+}
+
+#colHead {
+	float: left;
+	width: 30%;
+	padding-left: 5px;
+	padding-right: 2px;
+	text-align: center;
+	margin-left: 18px;
+	font-size: 23px;
+	color: #0e3f77;
+}
+
+.homePage {
+	margin-top: 20px;
 }
 
 #column {
@@ -246,11 +269,45 @@ textarea.small
     background-color: #e4e4e4;
 }
 
+#innerRow {
+	border-style: solid;
+	border-color: #0e3f77;
+	border-width: 1px;
+	height: 149px;
+	width: 293px;
+	margin-left: -8px;
+}
+
+.dogBox {
+	background-color: #e4e4e4;
+	width: 800px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-color: #0e3f77;
+	border-width: 3px;
+}
+
 @media screen and (max-width: 600px) {
     #column {
       width: 100%;
     }
 }
 
+.bottomPaws {
+	margin-top: 60px;
+}
 
+.infoButton {
+	border: none;
+	background-color: inherit;
+	cursor: pointer;
+	display: inline-block;
+}
 
+.changeWalkState {
+	border: none;
+	background-color: #e47822;
+	color: white;
+}
